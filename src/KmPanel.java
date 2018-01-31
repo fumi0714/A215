@@ -20,9 +20,9 @@ public class KmPanel extends JPanel implements ActionListener {
 	private JLabel label[] = new JLabel[15]; //ラベル
 	private JLabel Klabel[] = new JLabel[5]; // 空白用ラベル
 	private JTextField text[] = new JTextField[10];// 入力
-	private double dtext;
 	private JPanel p[] = new JPanel[6]; //パネル用
 	private int Itext[] = new int[10]; //整数変換用変数
+	private double dtext[] = new double[10]; //浮動演算変換用変数
 	private double zikyu,Mzikyu;//Mzikyuは一分の時給
 
 	public KmPanel(MainFrame frame) {
@@ -52,8 +52,8 @@ public class KmPanel extends JPanel implements ActionListener {
 		//文字列を整数変換
 		//勤務時間用テキストフィールド
 		text[0] = new JTextField("5");
-		Itext[0] = Integer.parseInt(text[0].getText());
-		Itext[0] = Itext[0] * 60;
+		dtext[1] = Double.parseDouble(text[7].getText());
+		dtext[0] = dtext[0] * 60;
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[0].setHorizontalAlignment(SwingConstants.CENTER);
 		text[0].setOpaque(true);
@@ -64,7 +64,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[2].setOpaque(true);
 
 		text[1] = new JTextField("0");
-		Itext[1] = Integer.parseInt(text[1].getText());
+		dtext[1] = Double.parseDouble(text[1].getText());
 		text[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[1].setHorizontalAlignment(SwingConstants.CENTER);
 		text[1].setOpaque(true);
@@ -80,7 +80,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[4].setOpaque(true);
 
 		text[2] = new JTextField("1");
-		Itext[2] = Integer.parseInt(text[2].getText());
+		dtext[2] = Double.parseDouble(text[2].getText());
 		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[2].setHorizontalAlignment(SwingConstants.CENTER);
 		text[2].setOpaque(true);
@@ -91,7 +91,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[5].setOpaque(true);
 
 		text[3] = new JTextField("0");
-		Itext[3] = Integer.parseInt(text[3].getText());
+		dtext[3] = Double.parseDouble(text[3].getText());
 		text[3].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[3].setHorizontalAlignment(SwingConstants.CENTER);
 		text[3].setOpaque(true);
@@ -108,7 +108,7 @@ public class KmPanel extends JPanel implements ActionListener {
 
 		//文字列をDoubleに変換
 		text[4] = new JTextField("1.25");
-		dtext = Double.parseDouble(text[4].getText());
+		dtext[4] = Double.parseDouble(text[4].getText());
 		text[4].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[4].setHorizontalAlignment(SwingConstants.CENTER);
 		text[4].setOpaque(true);
@@ -134,7 +134,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[9].setOpaque(true);
 
 		text[5] = new JTextField("1");
-		Itext[5] = Integer.parseInt(text[5].getText());
+		dtext[5] = Double.parseDouble(text[5].getText());
 		text[5].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[5].setHorizontalAlignment(SwingConstants.CENTER);
 		text[5].setOpaque(true);
@@ -145,7 +145,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[10].setOpaque(true);
 
 		text[6] = new JTextField("0");
-		Itext[6] = Integer.parseInt(text[6].getText());
+		dtext[6] = Double.parseDouble(text[6].getText());
 		text[6].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[6].setHorizontalAlignment(SwingConstants.CENTER);
 		text[6].setOpaque(true);
@@ -161,7 +161,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[12].setOpaque(true);
 
 		text[7] = new JTextField("871");
-		Itext[7] = Integer.parseInt(text[7].getText());
+		dtext[7] = Double.parseDouble(text[7].getText());
 		text[7].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[7].setHorizontalAlignment(SwingConstants.CENTER);
 		text[7].setOpaque(true);
