@@ -280,7 +280,15 @@ public class KmPanel extends JPanel implements ActionListener {
 			frame.changeWindow(panel);
 		}
 		if (object == Kbutton[0]) {
+			
+			String ok = "労働基準を満たしています";
+			String no = "労働基準を満たしていません";
+			boolean handan = true;
+			String data = "";
 
+			for (int i = 0; i < 8; i++) {
+				dtext[i] = Double.parseDouble(text[i].getText());
+			}
 
 			tm[0] = dtext[7];//時給
 			tm[1] = tm[0] / 60;//分給
@@ -291,13 +299,17 @@ public class KmPanel extends JPanel implements ActionListener {
 			nikyu[1] = nikyu[0] + tm[2];//日給(休憩時間無し)
 			kyutime = (dtext[5] * 60) + dtext[6];//休憩時間
 			nikyu[2] = nikyu[1] - (kyutime * tm[1]);
-			n = (int)nikyu[2];
+			n = (int) nikyu[2];
 
-			if(n != 0) {
-				label[14].setText("<html>日給は "+ n +" 円です<br>労働基準を満たしています</html>");
+			if(ktime >= 8 && kyutime == 0 ) {
+				data = no;
 			}
-			else if(ktime >= 8 && kyutime == 0) {
-				label[14].setText("<html>日給は "+ n +" 円です<br>労働基準を違反しています</html>");
+			//else if() {
+			//	
+			//}
+			
+			if (n != 0) {
+				label[14].setText("<html>日給は " + n + " 円です<br> " + data + " </html>");
 			}
 		}
 	}
