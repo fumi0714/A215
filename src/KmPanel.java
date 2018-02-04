@@ -280,7 +280,7 @@ public class KmPanel extends JPanel implements ActionListener {
 			frame.changeWindow(panel);
 		}
 		if (object == Kbutton[0]) {
-			
+
 			String ok = "労働基準を満たしています";
 			String no = "労働基準を満たしていません";
 			boolean handan = true;
@@ -301,13 +301,19 @@ public class KmPanel extends JPanel implements ActionListener {
 			nikyu[2] = nikyu[1] - (kyutime * tm[1]);
 			n = (int) nikyu[2];
 
-			if(ktime >= 8 && kyutime == 0 ) {
+			if( 480 > ktime && ktime > 360 && kyutime < 45 ) {
 				data = no;
 			}
-			//else if() {
-			//	
-			//}
-			
+			else if(ktime >= 480 && kyutime < 60) {
+				data = no;
+			}
+			else if(tm[0] <= 737) {
+				data = no;
+			}
+			else {
+				data = ok;
+			}
+
 			if (n != 0) {
 				label[14].setText("<html>日給は " + n + " 円です<br> " + data + " </html>");
 			}
