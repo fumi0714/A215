@@ -22,7 +22,18 @@ public class KmPanel extends JPanel implements ActionListener {
 	private JTextField text[] = new JTextField[10];// 入力
 	private JPanel p[] = new JPanel[6]; //パネル用
 	private double dtext[] = new double[10]; //浮動演算変換用変数
-	private double zikyu,Mzikyu;//Mzikyuは一分の時給
+	private double nikyu[] = new double[4];
+	//0]は勤務時間外倍率無し
+	//[1]は休憩時間無し
+	//[2]は休憩時間有り
+	private double tm[] = new double[3];
+	//[0]は時給
+	//[1]は分給
+	//[2]は勤務時間外のはみ出し金
+	private double ktime;//勤務時間変数
+	private double kyutime;//休憩時間
+	private double kbai;//勤務時間外倍率
+	private int n;//日給(計算結果後)
 
 	public KmPanel(MainFrame frame) {
 
@@ -52,7 +63,6 @@ public class KmPanel extends JPanel implements ActionListener {
 		//勤務時間用テキストフィールド
 		text[0] = new JTextField("5");
 		dtext[0] = Double.parseDouble(text[0].getText());
-		dtext[0] = dtext[0] * 60;
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[0].setHorizontalAlignment(SwingConstants.CENTER);
 		text[0].setOpaque(true);
@@ -270,11 +280,23 @@ public class KmPanel extends JPanel implements ActionListener {
 			frame.changeWindow(panel);
 		}
 		if (object == Kbutton[0]) {
-			double nikyu[] = new double[2];//[0]は勤務時間倍率無し[1]は勤務時間倍率有り
-									  //[2]は休憩時間無し[3]は休憩時間有り
-			Mzikyu = dtext[7] / 60;//時給を分給に変換
-			nikyu[0] = (dtext[0] + dtext[1]) * Mzikyu;
-			System.out.println(nikyu[0]);
+			tm[0] = dtext[7];//時給
+			tm[1] = tm[0] / 60;//分給
+			ktime = (dtext[0] * 60) + dtext[1];//勤務時間
+			nikyu[0] = ktime * tm[1];//勤務時間倍率無し
+			kbai = dtext[4];//勤務時間外倍率
+			tm[2] = (kbai * tm[0]) - tm[0];//勤務時間外倍率の金額
+			nikyu[1] = nikyu[0] + tm[2];//日給(休憩時間無し)
+			kyutime = (dtext[5] * 60) + dtext[6];//休憩時間
+			nikyu[2] = nikyu[1] - (kyutime * tm[1]);
+			n = (int)nikyu[2];
+
+			if(n != 0) {
+				label[14].setText("<html>日給は "+ n +" 円です<br>労働基準を満たしています</html>");
+			}
+			else if(ktime >= 8 && kyutime == 0) {
+				label[14].setText("<html>日給は "+ n +" 円です<br>労働基準を違反しています</html>");
+			}
 		}
 	}
 }
