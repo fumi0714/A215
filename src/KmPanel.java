@@ -280,6 +280,8 @@ public class KmPanel extends JPanel implements ActionListener {
 			frame.changeWindow(panel);
 		}
 		if (object == Kbutton[0]) {
+
+
 			tm[0] = dtext[7];//時給
 			tm[1] = tm[0] / 60;//分給
 			ktime = (dtext[0] * 60) + dtext[1];//勤務時間
