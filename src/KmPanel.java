@@ -21,7 +21,6 @@ public class KmPanel extends JPanel implements ActionListener {
 	private JLabel Klabel[] = new JLabel[5]; // 空白用ラベル
 	private JTextField text[] = new JTextField[10];// 入力
 	private JPanel p[] = new JPanel[6]; //パネル用
-	private int Itext[] = new int[10]; //整数変換用変数
 	private double dtext[] = new double[10]; //浮動演算変換用変数
 	private double zikyu,Mzikyu;//Mzikyuは一分の時給
 
@@ -52,7 +51,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		//文字列を整数変換
 		//勤務時間用テキストフィールド
 		text[0] = new JTextField("5");
-		dtext[1] = Double.parseDouble(text[7].getText());
+		dtext[0] = Double.parseDouble(text[0].getText());
 		dtext[0] = dtext[0] * 60;
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		text[0].setHorizontalAlignment(SwingConstants.CENTER);
@@ -273,8 +272,8 @@ public class KmPanel extends JPanel implements ActionListener {
 		if (object == Kbutton[0]) {
 			double nikyu[] = new double[2];//[0]は勤務時間倍率無し[1]は勤務時間倍率有り
 									  //[2]は休憩時間無し[3]は休憩時間有り
-			Mzikyu = Itext[7] / 60;//時給を分給に変換
-			nikyu[0] = (Itext[0] + Itext[1]) * Mzikyu;
+			Mzikyu = dtext[7] / 60;//時給を分給に変換
+			nikyu[0] = (dtext[0] + dtext[1]) * Mzikyu;
 			System.out.println(nikyu[0]);
 		}
 	}
