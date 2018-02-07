@@ -4,6 +4,7 @@ import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.SQLException;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -20,6 +21,9 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 	private JLabel label[] = new JLabel[20];
 	private JTextField text[] = new JTextField[10];// 入力
 	private JPanel p[] = new JPanel[5];
+	private String id;
+	private String start[] = new String[7];
+	private String end[] = new String[7];
 
 	public SfSubPanel2(MainFrame frame) {
 
@@ -58,7 +62,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 		label[2].setOpaque(true);
 
-		text[1] = new JTextField();
+		text[1] = new JTextField("2018-01-14 18:00:00");
 		text[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
 		label[3] = new JLabel("検索範囲(終了)");
@@ -66,7 +70,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		label[3].setHorizontalAlignment(SwingConstants.CENTER);
 		label[3].setOpaque(true);
 
-		text[2] = new JTextField();
+		text[2] = new JTextField("2018-01-15 24:00:00");
 		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
 		//表示用ラベル
@@ -144,6 +148,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 
 
 		Kbutton[0] = new JButton("決定");
+		Kbutton[0].addActionListener(this);
 
 		// パネル設定
 
@@ -205,6 +210,37 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		if (object == Mbutton[1]) {
 			SfPanel panel = new SfPanel(this.frame);
 			frame.changeWindow(panel);
+		}
+		if (object == Kbutton[0]) {
+			try {
+				if(m!=null) {
+					id= text[0].getText();
+					start[0] = text[1].getText();
+					end[0] = text[2].getText();
+
+					m.SSelect(id,start,end);
+
+					label[4].setText(start[0]);
+					label[5].setText(end[0]);
+					label[6].setText(start[1]);
+					label[7].setText(end[1]);
+					label[8].setText(start[2]);
+					label[9].setText(end[2]);
+					label[10].setText(start[3]);
+					label[11].setText(end[3]);
+					label[12].setText(start[4]);
+					label[13].setText(end[4]);
+					label[14].setText(start[5]);
+					label[15].setText(end[5]);
+					label[16].setText(start[6]);
+					label[17].setText(end[6]);
+
+				}
+			} catch (SQLException e1) {
+				// TODO 自動生成された catch ブロック
+				System.out.println(e1.toString());
+				e1.printStackTrace();
+			}
 		}
 	}
 }

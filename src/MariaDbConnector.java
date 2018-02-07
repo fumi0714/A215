@@ -248,7 +248,7 @@ public class MariaDbConnector {
 			handan = true;
 			System.out.println("MariaDBに接続できました。");
 
-			stmt.executeQuery("DELETE FROM SHIFT WHERE SHIFTID = "+ sid +"");
+			stmt.executeQuery("DELETE FROM SHIFT WHERE SHIFTID = " + sid + "");
 
 		} catch (NullPointerException e) {
 			handan = false;
@@ -263,6 +263,48 @@ public class MariaDbConnector {
 						con.close();
 					}
 
+				} catch (SQLException e) {
+					System.out.println("MariaDBのクローズに失敗しました。");
+				}
+			}
+		}
+		return handan;
+	}
+
+	//シフト参照
+	boolean SSelect(String id, String start[], String end[]) throws SQLException {
+		Connection con = null;
+		Statement stmt = null;
+		boolean handan;
+
+		try {
+			// MySQLに接続
+			con = DriverManager.getConnection("jdbc:mariadb://" + ip + ":3306/TEST", user, pass);
+			stmt = con.createStatement();
+			handan = true;
+			System.out.println("MariaDBに接続できました。");
+
+			ResultSet rs = stmt.executeQuery("SELECT * FROM SHIFT WHERE EMPID = " + id +
+								"BETWEEN " + start[0] + " AND " + end[0]);
+
+			while (rs.next()) {
+
+				start[0] = "" + rs.getTimestamp("STSRTTIME");
+				end[0] = "" + rs.getTimestamp("ENDTIME");
+			}
+
+		} catch (NullPointerException e) {
+			handan = false;
+			System.out.println("MariaDBに接続できませんでした。");
+		} finally {
+			if (con != null) {
+				try {
+					if (con != null) {
+						con.close();
+					}
+					if (stmt != null) {
+						con.close();
+					}
 				} catch (SQLException e) {
 					System.out.println("MariaDBのクローズに失敗しました。");
 				}
