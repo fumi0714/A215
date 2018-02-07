@@ -97,6 +97,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[1]);
 
 		text[0] = new JTextField("2");
+		text[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[0]);
 
 		label[2] = new JLabel("");
@@ -121,6 +122,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[6]);
 
 		text[2] = new JTextField("2018-01-14 18:00:00");
+		text[2].setFont(new Font("ＭＳ ゴシック", 0, 22));
 		p[3].add(text[2]);
 
 		label[7] = new JLabel("勤務終了時間");
@@ -131,6 +133,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[7]);
 
 		text[3] = new JTextField("2018-01-14 22:00:00");
+		text[3].setFont(new Font("ＭＳ ゴシック", 0, 22));
 		p[3].add(text[3]);
 
 		Kbutton[0] = new JButton("決定");
@@ -157,6 +160,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[9]);
 
 		text[4] = new JTextField();
+		text[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[4]);
 
 		label[10] = new JLabel("");
@@ -181,6 +185,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[14]);
 
 		text[6] = new JTextField();
+		text[6].setFont(new Font("ＭＳ ゴシック", 0, 22));
 		p[3].add(text[6]);
 
 		label[15] = new JLabel("勤務終了時間");
@@ -191,6 +196,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[15]);
 
 		text[7] = new JTextField();
+		text[7].setFont(new Font("ＭＳ ゴシック", 0, 22));
 		p[3].add(text[7]);
 
 		Kbutton[1] = new JButton("決定");
@@ -217,6 +223,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		p[3].add(label[17]);
 
 		text[8] = new JTextField();
+		text[8].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[8]);
 
 		label[18] = new JLabel("");

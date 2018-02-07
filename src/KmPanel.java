@@ -192,7 +192,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		Kbutton[0].addActionListener(this);
 
 		//結果表示用ラベル
-		label[14] = new JLabel("結果表示");
+		label[14] = new JLabel("<html>結果表示<br>半角数字で入力してください</html>");
 		label[14].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		label[14].setOpaque(true);
@@ -299,7 +299,7 @@ public class KmPanel extends JPanel implements ActionListener {
 			nikyu[1] = nikyu[0] + tm[2];//日給(休憩時間無し)
 			kyutime = (dtext[5] * 60) + dtext[6];//休憩時間
 			nikyu[2] = nikyu[1] - (kyutime * tm[1]);
-			n = (int) nikyu[2];
+			n = (int) nikyu[2];//日給を日給専用の変数に入れる
 
 			if( 480 > ktime && ktime > 360 && kyutime < 45 ) {
 				data = no;

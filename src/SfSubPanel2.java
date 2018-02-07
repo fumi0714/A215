@@ -17,7 +17,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 	private MariaDbConnector m;
 	private JButton Mbutton[] = new JButton[5];
 	private JButton Kbutton[] = new JButton[3];// 決定ボタン
-	private JLabel label[] = new JLabel[5];
+	private JLabel label[] = new JLabel[20];
 	private JTextField text[] = new JTextField[10];// 入力
 	private JPanel p[] = new JPanel[5];
 
@@ -69,6 +69,80 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		text[2] = new JTextField();
 		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
+		//表示用ラベル
+
+		//1
+		label[4] = new JLabel();
+		label[4].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[4].setHorizontalAlignment(SwingConstants.CENTER);
+		label[4].setOpaque(true);
+		//2
+		label[5] = new JLabel();
+		label[5].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[5].setHorizontalAlignment(SwingConstants.CENTER);
+		label[5].setOpaque(true);
+		//3
+		label[6] = new JLabel();
+		label[6].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[6].setHorizontalAlignment(SwingConstants.CENTER);
+		label[6].setOpaque(true);
+		//4
+		label[7] = new JLabel();
+		label[7].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[7].setHorizontalAlignment(SwingConstants.CENTER);
+		label[7].setOpaque(true);
+		//5
+		label[8] = new JLabel();
+		label[8].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[8].setHorizontalAlignment(SwingConstants.CENTER);
+		label[8].setOpaque(true);
+		//6
+		label[9] = new JLabel();
+		label[9].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[9].setHorizontalAlignment(SwingConstants.CENTER);
+		label[9].setOpaque(true);
+		//7
+		label[10] = new JLabel();
+		label[10].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[10].setHorizontalAlignment(SwingConstants.CENTER);
+		label[10].setOpaque(true);
+		//8
+		label[11] = new JLabel();
+		label[11].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[11].setHorizontalAlignment(SwingConstants.CENTER);
+		label[11].setOpaque(true);
+		//9
+		label[12] = new JLabel();
+		label[12].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[12].setHorizontalAlignment(SwingConstants.CENTER);
+		label[12].setOpaque(true);
+		//10
+		label[13] = new JLabel();
+		label[13].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[13].setHorizontalAlignment(SwingConstants.CENTER);
+		label[13].setOpaque(true);
+		//11
+		label[14] = new JLabel();
+		label[14].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[14].setHorizontalAlignment(SwingConstants.CENTER);
+		label[14].setOpaque(true);
+		//12
+		label[15] = new JLabel();
+		label[15].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[15].setHorizontalAlignment(SwingConstants.CENTER);
+		label[15].setOpaque(true);
+		//13
+		label[16] = new JLabel();
+		label[16].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[16].setHorizontalAlignment(SwingConstants.CENTER);
+		label[16].setOpaque(true);
+		//14
+		label[17] = new JLabel();
+		label[17].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[17].setHorizontalAlignment(SwingConstants.CENTER);
+		label[17].setOpaque(true);
+
+
 		Kbutton[0] = new JButton("決定");
 
 		// パネル設定
@@ -99,6 +173,24 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		p[3].add(text[2]);
 		p[3].add(Kbutton[0]);
 		p[0].add(p[3], BorderLayout.SOUTH);
+
+		p[4] = new JPanel();
+		p[4].setLayout(new GridLayout(7, 2));
+		p[4].add(label[4]);//1
+		p[4].add(label[5]);//2
+		p[4].add(label[6]);//3
+		p[4].add(label[7]);//4
+		p[4].add(label[8]);//5
+		p[4].add(label[9]);//6
+		p[4].add(label[10]);//7
+		p[4].add(label[11]);//8
+		p[4].add(label[12]);//9
+		p[4].add(label[13]);//10
+		p[4].add(label[14]);//11
+		p[4].add(label[15]);//12
+		p[4].add(label[16]);//13
+		p[4].add(label[17]);//14
+		this.add(p[4], BorderLayout.CENTER);
 
 	}
 
