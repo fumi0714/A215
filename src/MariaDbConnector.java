@@ -284,15 +284,16 @@ public class MariaDbConnector {
 			handan = true;
 			System.out.println("MariaDBに接続できました。");
 
-			ResultSet rs = stmt.executeQuery("SELECT * FROM SHIFT WHERE EMPID = " + id +
-								"BETWEEN " + start[0] + " AND " + end[0]);
-
+			ResultSet rs = stmt.executeQuery("SELECT STARTTIME,ENDTIME FROM SHIFT WHERE EMPID = " + id +
+								" AND STARTTIME >= '" + start[0] + "' AND STARTTIME <= '" + end[0] +"'");
+			int x = 0;
+			for(int i=0;i<7;i++) {
 			while (rs.next()) {
-
-				start[0] = "" + rs.getTimestamp("STSRTTIME");
-				end[0] = "" + rs.getTimestamp("ENDTIME");
+					start[x] = "" + rs.getTimestamp("STARTTIME");
+					end[x] = "" + rs.getTimestamp("ENDTIME");
+					x++;
+				}
 			}
-
 		} catch (NullPointerException e) {
 			handan = false;
 			System.out.println("MariaDBに接続できませんでした。");

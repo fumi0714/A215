@@ -50,7 +50,7 @@ public class LoginPanel extends JPanel implements ActionListener {
 		label[0].setOpaque(true);
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 
-		text[0] = new JTextField("192.168.91.129");
+		text[0] = new JTextField("192.168.91.133");
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 45));
 
 		label[1] = new JLabel("");

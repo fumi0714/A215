@@ -54,7 +54,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 		label[1].setOpaque(true);
 
-		text[0] = new JTextField();
+		text[0] = new JTextField("1");
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
 		label[2] = new JLabel("検索範囲(開始)");
@@ -62,7 +62,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 		label[2].setOpaque(true);
 
-		text[1] = new JTextField("2018-01-14 18:00:00");
+		text[1] = new JTextField("2018-01-15 18:00:00");
 		text[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
 		label[3] = new JLabel("検索範囲(終了)");
@@ -70,7 +70,7 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		label[3].setHorizontalAlignment(SwingConstants.CENTER);
 		label[3].setOpaque(true);
 
-		text[2] = new JTextField("2018-01-15 24:00:00");
+		text[2] = new JTextField("2018-01-17 23:59:59");
 		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
 		//表示用ラベル
