@@ -288,6 +288,10 @@ public class MariaDbConnector {
 								" AND STARTTIME >= '" + start[0] + "' AND STARTTIME <= '" + end[0] +"'");
 			int x = 0;
 			for(int i=0;i<7;i++) {
+				start[i] = "";
+				end[i] = "";
+			}
+			for(int i=0;i<7;i++) {
 			while (rs.next()) {
 					start[x] = "" + rs.getTimestamp("STARTTIME");
 					end[x] = "" + rs.getTimestamp("ENDTIME");

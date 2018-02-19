@@ -217,21 +217,6 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 					id= text[0].getText();
 					start[0] = text[1].getText();
 					end[0] = text[2].getText();
-					
-					label[4].setText("");
-					label[5].setText("");
-					label[6].setText("");
-					label[7].setText("");
-					label[8].setText("");
-					label[9].setText("");
-					label[10].setText("");
-					label[11].setText("");
-					label[12].setText("");
-					label[13].setText("");
-					label[14].setText("");
-					label[15].setText("");
-					label[16].setText("");
-					label[17].setText("");
 
 					m.SSelect(id,start,end);
 
