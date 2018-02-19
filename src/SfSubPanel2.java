@@ -76,73 +76,73 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		//表示用ラベル
 
 		//1
-		label[4] = new JLabel();
-		label[4].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[4] = new JLabel("検索結果1日目を表示します");
+		label[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[4].setHorizontalAlignment(SwingConstants.CENTER);
 		label[4].setOpaque(true);
 		//2
 		label[5] = new JLabel();
-		label[5].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[5].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[5].setHorizontalAlignment(SwingConstants.CENTER);
 		label[5].setOpaque(true);
 		//3
-		label[6] = new JLabel();
-		label[6].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[6] = new JLabel("検索結果2日目を表示します");
+		label[6].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[6].setHorizontalAlignment(SwingConstants.CENTER);
 		label[6].setOpaque(true);
 		//4
 		label[7] = new JLabel();
-		label[7].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[7].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[7].setHorizontalAlignment(SwingConstants.CENTER);
 		label[7].setOpaque(true);
 		//5
-		label[8] = new JLabel();
-		label[8].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[8] = new JLabel("検索結果3日目を表示します");
+		label[8].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[8].setHorizontalAlignment(SwingConstants.CENTER);
 		label[8].setOpaque(true);
 		//6
 		label[9] = new JLabel();
-		label[9].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[9].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[9].setHorizontalAlignment(SwingConstants.CENTER);
 		label[9].setOpaque(true);
 		//7
-		label[10] = new JLabel();
-		label[10].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[10] = new JLabel("検索結果4日目を表示します");
+		label[10].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[10].setHorizontalAlignment(SwingConstants.CENTER);
 		label[10].setOpaque(true);
 		//8
 		label[11] = new JLabel();
-		label[11].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[11].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[11].setHorizontalAlignment(SwingConstants.CENTER);
 		label[11].setOpaque(true);
 		//9
-		label[12] = new JLabel();
-		label[12].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[12] = new JLabel("検索結果5日目を表示します");
+		label[12].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[12].setHorizontalAlignment(SwingConstants.CENTER);
 		label[12].setOpaque(true);
 		//10
 		label[13] = new JLabel();
-		label[13].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[13].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[13].setHorizontalAlignment(SwingConstants.CENTER);
 		label[13].setOpaque(true);
 		//11
-		label[14] = new JLabel();
-		label[14].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[14] = new JLabel("検索結果6日目を表示します");
+		label[14].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		label[14].setOpaque(true);
 		//12
 		label[15] = new JLabel();
-		label[15].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[15].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[15].setHorizontalAlignment(SwingConstants.CENTER);
 		label[15].setOpaque(true);
 		//13
-		label[16] = new JLabel();
-		label[16].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[16] = new JLabel("検索結果7日目を表示します");
+		label[16].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[16].setHorizontalAlignment(SwingConstants.CENTER);
 		label[16].setOpaque(true);
 		//14
 		label[17] = new JLabel();
-		label[17].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[17].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[17].setHorizontalAlignment(SwingConstants.CENTER);
 		label[17].setOpaque(true);
 
@@ -217,6 +217,21 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 					id= text[0].getText();
 					start[0] = text[1].getText();
 					end[0] = text[2].getText();
+					
+					label[4].setText("");
+					label[5].setText("");
+					label[6].setText("");
+					label[7].setText("");
+					label[8].setText("");
+					label[9].setText("");
+					label[10].setText("");
+					label[11].setText("");
+					label[12].setText("");
+					label[13].setText("");
+					label[14].setText("");
+					label[15].setText("");
+					label[16].setText("");
+					label[17].setText("");
 
 					m.SSelect(id,start,end);
 
