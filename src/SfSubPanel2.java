@@ -146,7 +146,6 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		label[17].setHorizontalAlignment(SwingConstants.CENTER);
 		label[17].setOpaque(true);
 
-
 		Kbutton[0] = new JButton("決定");
 		Kbutton[0].addActionListener(this);
 
@@ -213,12 +212,12 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		}
 		if (object == Kbutton[0]) {
 			try {
-				if(m!=null) {
-					id= text[0].getText();
+				if (m != null) {
+					id = text[0].getText();
 					start[0] = text[1].getText();
 					end[0] = text[2].getText();
 
-					m.SSelect(id,start,end);
+					m.SSelect(id, start, end);
 
 					label[4].setText(start[0]);
 					label[5].setText(end[0]);

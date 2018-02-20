@@ -30,7 +30,7 @@ public class LoginPanel extends JPanel implements ActionListener {
 
 		setLayout(new BorderLayout());
 
-//パーツ設定
+		//パーツ設定
 
 		Lbutton[0] = new JButton();
 		Lbutton[0].setText("ログイン");
@@ -89,7 +89,7 @@ public class LoginPanel extends JPanel implements ActionListener {
 		label[5].setOpaque(true);
 		label[5].setHorizontalAlignment(SwingConstants.CENTER);
 
-//パネル設定
+		//パネル設定
 		p[0] = new JPanel();
 		p[0].setLayout(new GridLayout(1, 1));
 		p[0].add(label01);
@@ -113,7 +113,6 @@ public class LoginPanel extends JPanel implements ActionListener {
 		p[2].add(label[5]);
 		this.add(p[2], BorderLayout.SOUTH);
 
-
 	}
 
 	public void actionPerformed(ActionEvent e) {
@@ -123,15 +122,14 @@ public class LoginPanel extends JPanel implements ActionListener {
 		if (object == Lbutton[0]) {
 
 			try {
-				handan = m.Login(text[0].getText(),text[1].getText(),text[2].getText());
+				handan = m.Login(text[0].getText(), text[1].getText(), text[2].getText());
 			} catch (SQLException e1) {
 				e1.printStackTrace();
 			}
-			if(handan ==  true) {
+			if (handan == true) {
 				MainPanel panel = new MainPanel(this.frame);
 				frame.changeWindow(panel);
-			}
-			else {
+			} else {
 				label[5].setText("ログインできませんでした");
 			}
 		}

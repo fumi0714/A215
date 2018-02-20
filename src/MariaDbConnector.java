@@ -285,14 +285,14 @@ public class MariaDbConnector {
 			System.out.println("MariaDBに接続できました。");
 
 			ResultSet rs = stmt.executeQuery("SELECT STARTTIME,ENDTIME FROM SHIFT WHERE EMPID = " + id +
-								" AND STARTTIME >= '" + start[0] + "' AND STARTTIME <= '" + end[0] +"'");
+					" AND STARTTIME >= '" + start[0] + "' AND STARTTIME <= '" + end[0] + "'");
 			int x = 0;
-			for(int i=0;i<7;i++) {
+			for (int i = 0; i < 7; i++) {
 				start[i] = "";
 				end[i] = "";
 			}
-			for(int i=0;i<7;i++) {
-			while (rs.next()) {
+			for (int i = 0; i < 7; i++) {
+				while (rs.next()) {
 					start[x] = "" + rs.getTimestamp("STARTTIME");
 					end[x] = "" + rs.getTimestamp("ENDTIME");
 					x++;
