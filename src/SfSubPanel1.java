@@ -40,7 +40,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 
 		// タイトルラベル
 		label[0] = new JLabel("シフト管理入力画面");
-		label[0].setFont(new Font("ＭＳ ゴシック", 0, 70));
+		label[0].setFont(new Font("ＭＳ ゴシック", 0, 100));
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 		label[0].setForeground(Color.GREEN);
 		label[0].setBackground(Color.BLACK);
@@ -84,14 +84,12 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 
 		label[0] = new JLabel("入力");
 		label[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[0].setBackground(Color.GREEN);
 		label[0].setOpaque(true);
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[0]);
 
 		label[1] = new JLabel("従業員ID");
 		label[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[1].setBackground(Color.RED);
 		label[1].setOpaque(true);
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[1]);
@@ -116,24 +114,22 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 
 		label[6] = new JLabel("勤務開始時間");
 		label[6].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[6].setBackground(Color.RED);
 		label[6].setOpaque(true);
 		label[6].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[6]);
 
 		text[2] = new JTextField("2018-01-14 18:00:00");
-		text[2].setFont(new Font("ＭＳ ゴシック", 0, 22));
+		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		p[3].add(text[2]);
 
 		label[7] = new JLabel("勤務終了時間");
 		label[7].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[7].setBackground(Color.RED);
 		label[7].setOpaque(true);
 		label[7].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[7]);
 
 		text[3] = new JTextField("2018-01-14 22:00:00");
-		text[3].setFont(new Font("ＭＳ ゴシック", 0, 22));
+		text[3].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		p[3].add(text[3]);
 
 		Kbutton[0] = new JButton("決定");
@@ -147,14 +143,12 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 
 		label[8] = new JLabel("変更");
 		label[8].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[8].setBackground(Color.GREEN);
 		label[8].setOpaque(true);
 		label[8].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[8]);
 
 		label[9] = new JLabel("シフトID");
 		label[9].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[9].setBackground(Color.RED);
 		label[9].setOpaque(true);
 		label[9].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[9]);
@@ -179,24 +173,22 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 
 		label[14] = new JLabel("勤務開始時間");
 		label[14].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[14].setBackground(Color.RED);
 		label[14].setOpaque(true);
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[14]);
 
 		text[6] = new JTextField();
-		text[6].setFont(new Font("ＭＳ ゴシック", 0, 22));
+		text[6].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		p[3].add(text[6]);
 
 		label[15] = new JLabel("勤務終了時間");
 		label[15].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[15].setBackground(Color.RED);
 		label[15].setOpaque(true);
 		label[15].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[15]);
 
 		text[7] = new JTextField();
-		text[7].setFont(new Font("ＭＳ ゴシック", 0, 22));
+		text[7].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		p[3].add(text[7]);
 
 		Kbutton[1] = new JButton("決定");
@@ -210,14 +202,12 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 
 		label[16] = new JLabel("削除");
 		label[16].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[16].setBackground(Color.GREEN);
 		label[16].setOpaque(true);
 		label[16].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[16]);
 
 		label[17] = new JLabel("シフトID");
 		label[17].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[17].setBackground(Color.RED);
 		label[17].setOpaque(true);
 		label[17].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[17]);

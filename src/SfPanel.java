@@ -28,21 +28,21 @@ public class SfPanel extends JPanel implements ActionListener {
 
 		button[0] = new JButton();
 		button[0].setText("<html>入力<br/>変更<br/>削除</html>");
-		button[0].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 35));
+		button[0].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 60));
 		button[0].addActionListener(this);
 
 		button[1] = new JButton();
 		button[1].setText("<html>参照</html>");
-		button[1].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 35));
+		button[1].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 60));
 		button[1].addActionListener(this);
 
 		button[2] = new JButton();
 		button[2].setText("<html>メイン画面に戻る</html>");
-		button[2].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 35));
+		button[2].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 60));
 		button[2].addActionListener(this);
 
 		label[0] = new JLabel("シフト管理画面");
-		label[0].setFont(new Font("ＭＳ ゴシック", 0, 70));
+		label[0].setFont(new Font("ＭＳ ゴシック", 0, 100));
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 		label[0].setForeground(Color.GREEN);
 		label[0].setBackground(Color.BLACK);

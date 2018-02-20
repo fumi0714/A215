@@ -38,53 +38,53 @@ public class LoginPanel extends JPanel implements ActionListener {
 		Lbutton[0].addActionListener(this);
 
 		label01 = new JLabel("従業員管理ログイン画面");
-		label01.setFont(new Font("ＭＳ ゴシック", 0, 70));
+		label01.setFont(new Font("ＭＳ ゴシック", 0, 100));
 		label01.setHorizontalAlignment(SwingConstants.CENTER);
 		label01.setForeground(Color.GREEN);
 		label01.setBackground(Color.BLACK);
 		label01.setOpaque(true);
 
 		label[0] = new JLabel("IPアドレス");
-		label[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
+		label[0].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[0].setBackground(Color.GREEN);
 		label[0].setOpaque(true);
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 
 		text[0] = new JTextField("192.168.91.133");
-		text[0].setFont(new Font("ＭＳ ゴシック", 0, 45));
+		text[0].setFont(new Font("ＭＳ ゴシック", 0, 60));
 
 		label[1] = new JLabel("");
-		label[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
+		label[1].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[1].setBackground(Color.GREEN);
 		label[1].setOpaque(true);
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 
 		label[2] = new JLabel("ユーザー名");
-		label[2].setFont(new Font("ＭＳ ゴシック", 0, 35));
+		label[2].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[2].setBackground(Color.GREEN);
 		label[2].setOpaque(true);
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 
 		text[1] = new JTextField("xperia");
-		text[1].setFont(new Font("ＭＳ ゴシック", 0, 45));
+		text[1].setFont(new Font("ＭＳ ゴシック", 0, 60));
 
 		label[3] = new JLabel("");
-		label[3].setFont(new Font("ＭＳ ゴシック", 0, 35));
+		label[3].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[3].setBackground(Color.GREEN);
 		label[3].setOpaque(true);
 		label[3].setHorizontalAlignment(SwingConstants.CENTER);
 
 		label[4] = new JLabel("パスワード");
-		label[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
+		label[4].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[4].setBackground(Color.GREEN);
 		label[4].setOpaque(true);
 		label[4].setHorizontalAlignment(SwingConstants.CENTER);
 
 		text[2] = new JTextField("password");
-		text[2].setFont(new Font("ＭＳ ゴシック", 0, 45));
+		text[2].setFont(new Font("ＭＳ ゴシック", 0, 60));
 
 		label[5] = new JLabel("ログインしてください");
-		label[5].setFont(new Font("ＭＳ ゴシック", 0, 35));
+		label[5].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[5].setBackground(Color.GREEN);
 		label[5].setOpaque(true);
 		label[5].setHorizontalAlignment(SwingConstants.CENTER);

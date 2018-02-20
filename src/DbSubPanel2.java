@@ -40,7 +40,7 @@ public class DbSubPanel2 extends JPanel implements ActionListener {
 
 		// タイトルラベル
 		label[0] = new JLabel("従業員管理DB参照画面");
-		label[0].setFont(new Font("ＭＳ ゴシック", 0, 70));
+		label[0].setFont(new Font("ＭＳ ゴシック", 0, 100));
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 		label[0].setForeground(Color.GREEN);
 		label[0].setBackground(Color.BLACK);

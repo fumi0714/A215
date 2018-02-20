@@ -58,20 +58,20 @@ public class SfSubPanel2 extends JPanel implements ActionListener {
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
 
 		label[2] = new JLabel("検索範囲(開始)");
-		label[2].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[2].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 		label[2].setOpaque(true);
 
 		text[1] = new JTextField("2018-01-15 18:00:00");
-		text[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[1].setFont(new Font("ＭＳ ゴシック", 0, 27));
 
 		label[3] = new JLabel("検索範囲(終了)");
-		label[3].setFont(new Font("ＭＳ ゴシック", 0, 20));
+		label[3].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[3].setHorizontalAlignment(SwingConstants.CENTER);
 		label[3].setOpaque(true);
 
 		text[2] = new JTextField("2018-01-17 23:59:59");
-		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[2].setFont(new Font("ＭＳ ゴシック", 0, 27));
 
 		//表示用ラベル
 

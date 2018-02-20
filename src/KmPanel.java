@@ -55,7 +55,7 @@ public class KmPanel extends JPanel implements ActionListener {
 		label[0].setOpaque(true);
 
 		label[1] = new JLabel("勤務時間");
-		label[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 		label[1].setOpaque(true);
 
@@ -63,125 +63,125 @@ public class KmPanel extends JPanel implements ActionListener {
 		//勤務時間用テキストフィールド
 		text[0] = new JTextField("5");
 		dtext[0] = Double.parseDouble(text[0].getText());
-		text[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[0].setHorizontalAlignment(SwingConstants.CENTER);
 		text[0].setOpaque(true);
 
 		label[2] = new JLabel("時");
-		label[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[2].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 		label[2].setOpaque(true);
 
 		text[1] = new JTextField("0");
 		dtext[1] = Double.parseDouble(text[1].getText());
-		text[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[1].setHorizontalAlignment(SwingConstants.CENTER);
 		text[1].setOpaque(true);
 
 		label[3] = new JLabel("分");
-		label[3].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[3].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[3].setHorizontalAlignment(SwingConstants.CENTER);
 		label[3].setOpaque(true);
 
 		label[4] = new JLabel("勤務時間外");
-		label[4].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[4].setHorizontalAlignment(SwingConstants.CENTER);
 		label[4].setOpaque(true);
 
 		text[2] = new JTextField("1");
 		dtext[2] = Double.parseDouble(text[2].getText());
-		text[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[2].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[2].setHorizontalAlignment(SwingConstants.CENTER);
 		text[2].setOpaque(true);
 
 		label[5] = new JLabel("時");
-		label[5].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[5].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[5].setHorizontalAlignment(SwingConstants.CENTER);
 		label[5].setOpaque(true);
 
 		text[3] = new JTextField("0");
 		dtext[3] = Double.parseDouble(text[3].getText());
-		text[3].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[3].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[3].setHorizontalAlignment(SwingConstants.CENTER);
 		text[3].setOpaque(true);
 
 		label[6] = new JLabel("分");
-		label[6].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[6].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[6].setHorizontalAlignment(SwingConstants.CENTER);
 		label[6].setOpaque(true);
 
 		label[7] = new JLabel("勤務時間外倍率");
-		label[7].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[7].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[7].setHorizontalAlignment(SwingConstants.CENTER);
 		label[7].setOpaque(true);
 
 		//文字列をDoubleに変換
 		text[4] = new JTextField("1.25");
 		dtext[4] = Double.parseDouble(text[4].getText());
-		text[4].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[4].setHorizontalAlignment(SwingConstants.CENTER);
 		text[4].setOpaque(true);
 
 		label[8] = new JLabel("倍");
-		label[8].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[8].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[8].setHorizontalAlignment(SwingConstants.CENTER);
 		label[8].setOpaque(true);
 
 		Klabel[0] = new JLabel("");
-		Klabel[0].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		Klabel[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		Klabel[0].setHorizontalAlignment(SwingConstants.CENTER);
 		Klabel[0].setOpaque(true);
 
 		Klabel[1] = new JLabel("");
-		Klabel[1].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		Klabel[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		Klabel[1].setHorizontalAlignment(SwingConstants.CENTER);
 		Klabel[1].setOpaque(true);
 
 		label[9] = new JLabel("休憩時間");
-		label[9].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[9].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[9].setHorizontalAlignment(SwingConstants.CENTER);
 		label[9].setOpaque(true);
 
 		text[5] = new JTextField("1");
 		dtext[5] = Double.parseDouble(text[5].getText());
-		text[5].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[5].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[5].setHorizontalAlignment(SwingConstants.CENTER);
 		text[5].setOpaque(true);
 
 		label[10] = new JLabel("時");
-		label[10].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[10].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[10].setHorizontalAlignment(SwingConstants.CENTER);
 		label[10].setOpaque(true);
 
 		text[6] = new JTextField("0");
 		dtext[6] = Double.parseDouble(text[6].getText());
-		text[6].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[6].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[6].setHorizontalAlignment(SwingConstants.CENTER);
 		text[6].setOpaque(true);
 
 		label[11] = new JLabel("分");
-		label[11].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[11].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[11].setHorizontalAlignment(SwingConstants.CENTER);
 		label[11].setOpaque(true);
 
 		label[12] = new JLabel("時給");
-		label[12].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[12].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[12].setHorizontalAlignment(SwingConstants.CENTER);
 		label[12].setOpaque(true);
 
 		text[7] = new JTextField("871");
 		dtext[7] = Double.parseDouble(text[7].getText());
-		text[7].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		text[7].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		text[7].setHorizontalAlignment(SwingConstants.CENTER);
 		text[7].setOpaque(true);
 
 		label[13] = new JLabel("円");
-		label[13].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[13].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		label[13].setHorizontalAlignment(SwingConstants.CENTER);
 		label[13].setOpaque(true);
 
 		Klabel[2] = new JLabel("");
-		Klabel[2].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		Klabel[2].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		Klabel[2].setHorizontalAlignment(SwingConstants.CENTER);
 		Klabel[2].setOpaque(true);
 
@@ -193,7 +193,7 @@ public class KmPanel extends JPanel implements ActionListener {
 
 		//結果表示用ラベル
 		label[14] = new JLabel("<html>結果表示<br>半角数字で入力してください</html>");
-		label[14].setFont(new Font("ＭＳ ゴシック", 0, 30));
+		label[14].setFont(new Font("ＭＳ ゴシック", 0, 60));
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		label[14].setOpaque(true);
 

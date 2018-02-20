@@ -28,22 +28,22 @@ public class MainPanel extends JPanel implements ActionListener {
 
 		button[0] = new JButton();
 		button[0].setText("<html>従業員管理<br/>データベース</html>");
-		button[0].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 35));
+		button[0].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 60));
 		button[0].addActionListener(this);
 
 		button[1] = new JButton();
 		button[1].setText("<html>給与明細管理</html>");
-		button[1].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 35));
+		button[1].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 60));
 		button[1].addActionListener(this);
 
 		button[2] = new JButton();
 		button[2].setText("<html>シフト管理</html>");
-		button[2].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 35));
+		button[2].setFont(new Font("ＭＳ ゴシック", Font.BOLD, 60));
 		button[2].addActionListener(this);
 
 		label01 = new JLabel("従業員管理ツール画面");
 
-		label01.setFont(new Font("ＭＳ ゴシック", 0, 70));
+		label01.setFont(new Font("ＭＳ ゴシック", 0, 100));
 		label01.setHorizontalAlignment(SwingConstants.CENTER);
 		label01.setForeground(Color.GREEN);
 		label01.setBackground(Color.BLACK);

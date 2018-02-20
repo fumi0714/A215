@@ -42,7 +42,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		// タイトルラベル
 		label[0] = new JLabel("従業員管理DB入力画面");
-		label[0].setFont(new Font("ＭＳ ゴシック", 0, 70));
+		label[0].setFont(new Font("ＭＳ ゴシック", 0, 100));
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 		label[0].setForeground(Color.GREEN);
 		label[0].setBackground(Color.BLACK);
@@ -72,14 +72,12 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[0] = new JLabel("新規登録");
 		label[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[0].setBackground(Color.GREEN);
 		label[0].setOpaque(true);
 		label[0].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[0]);
 
 		label[1] = new JLabel("氏名");
 		label[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[1].setBackground(Color.RED);
 		label[1].setOpaque(true);
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[1]);
@@ -90,7 +88,6 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[2] = new JLabel("生年月日");
 		label[2].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[2].setBackground(Color.RED);
 		label[2].setOpaque(true);
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[2]);
@@ -107,7 +104,6 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[5] = new JLabel("住所");
 		label[5].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[5].setBackground(Color.RED);
 		label[5].setOpaque(true);
 		label[5].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[5]);
@@ -119,7 +115,6 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[6] = new JLabel("入社日");
 		label[6].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[6].setBackground(Color.RED);
 		label[6].setOpaque(true);
 		label[6].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[6]);
@@ -136,7 +131,6 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[9] = new JLabel("時給");
 		label[9].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[9].setBackground(Color.RED);
 		label[9].setOpaque(true);
 		label[9].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[9]);
@@ -162,14 +156,12 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[12] = new JLabel("変更項目");
 		label[12].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[12].setBackground(Color.GREEN);
 		label[12].setOpaque(true);
 		label[12].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[12]);
 
 		label[13] = new JLabel("従業員ID");
 		label[13].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[13].setBackground(Color.RED);
 		label[13].setOpaque(true);
 		label[13].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[13]);
@@ -180,7 +172,6 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[14] = new JLabel("項目");
 		label[14].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[14].setBackground(Color.RED);
 		label[14].setOpaque(true);
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[14]);
@@ -197,7 +188,6 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[17] = new JLabel("値");
 		label[17].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[17].setBackground(Color.RED);
 		label[17].setOpaque(true);
 		label[17].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[17]);
@@ -221,14 +211,12 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 
 		label[20] = new JLabel("退職");
 		label[20].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[20].setBackground(Color.GREEN);
 		label[20].setOpaque(true);
 		label[20].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[20]);
 
 		label[21] = new JLabel("従業員ID");
 		label[21].setFont(new Font("ＭＳ ゴシック", 0, 35));
-		label[21].setBackground(Color.RED);
 		label[21].setOpaque(true);
 		label[21].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[21]);

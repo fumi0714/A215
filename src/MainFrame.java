@@ -11,7 +11,7 @@ public class MainFrame extends JFrame {
 	public MainFrame() {
 
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setSize(1280, 1024);
+		this.setSize(1920, 1030);
 		this.setTitle("従業員管理ツール");
 		currentPanel = null;
 		icon = new ImageIcon("img/m.jpg");
