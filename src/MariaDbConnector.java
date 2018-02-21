@@ -127,7 +127,7 @@ public class MariaDbConnector {
 			handan = true;
 			System.out.println("MariaDBに接続できました。");
 
-			stmt.executeQuery("DELETE FROM EMP WHERE EMPID = " + id + "");
+			stmt.executeQuery("DELETE FROM EMP WHERE EMPID = " + id);
 
 		} catch (NullPointerException e) {
 			handan = false;

@@ -82,7 +82,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[1]);
 
-		text[0] = new JTextField("下出史明");
+		text[0] = new JTextField("杜元計助");
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[0]);
 
@@ -92,7 +92,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[2].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[2]);
 
-		text[1] = new JTextField("19970714");
+		text[1] = new JTextField("19971007");
 		text[1].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[1]);
 
@@ -108,7 +108,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[5].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[5]);
 
-		area = new JTextArea("埼玉県寄居町赤浜2617-8");
+		area = new JTextArea("埼玉県上尾市");
 		area.setFont(new Font("ＭＳ ゴシック", 0, 35));
 	    area.setLineWrap(true);
 		p[3].add(area);
@@ -119,7 +119,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[6].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[6]);
 
-		text[3] = new JTextField("20170402");
+		text[3] = new JTextField("20180222");
 		text[3].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[3]);
 
@@ -135,7 +135,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[9].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[9]);
 
-		text[4] = new JTextField("1500");
+		text[4] = new JTextField("1");
 		text[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[4]);
 
@@ -166,7 +166,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[13].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[13]);
 
-		text[6] = new JTextField();
+		text[6] = new JTextField("2");
 		text[6].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[6]);
 
@@ -176,7 +176,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[14]);
 
-		text[7] = new JTextField();
+		text[7] = new JTextField("NAME");
 		text[7].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[7]);
 
@@ -192,7 +192,7 @@ public class DbSubPanel1 extends JPanel implements ActionListener {
 		label[17].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[17]);
 
-		text[8] = new JTextField();
+		text[8] = new JTextField("森本啓介");
 		text[8].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[8]);
 

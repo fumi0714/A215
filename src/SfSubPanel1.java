@@ -94,7 +94,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		label[1].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[1]);
 
-		text[0] = new JTextField("2");
+		text[0] = new JTextField("1");
 		text[0].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[0]);
 
@@ -153,7 +153,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		label[9].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[9]);
 
-		text[4] = new JTextField();
+		text[4] = new JTextField("1");
 		text[4].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[4]);
 
@@ -177,7 +177,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		label[14].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[14]);
 
-		text[6] = new JTextField();
+		text[6] = new JTextField("2018-01-14 18:00:00");
 		text[6].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		p[3].add(text[6]);
 
@@ -187,7 +187,7 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		label[15].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[15]);
 
-		text[7] = new JTextField();
+		text[7] = new JTextField("2018-01-14 23:00:00");
 		text[7].setFont(new Font("ＭＳ ゴシック", 0, 30));
 		p[3].add(text[7]);
 
@@ -212,11 +212,11 @@ public class SfSubPanel1 extends JPanel implements ActionListener {
 		label[17].setHorizontalAlignment(SwingConstants.CENTER);
 		p[3].add(label[17]);
 
-		text[8] = new JTextField();
+		text[8] = new JTextField("1");
 		text[8].setFont(new Font("ＭＳ ゴシック", 0, 35));
 		p[3].add(text[8]);
 
-		label[18] = new JLabel("");
+		label[18] = new JLabel();
 		p[3].add(label[18]);
 
 		label[19] = new JLabel();
